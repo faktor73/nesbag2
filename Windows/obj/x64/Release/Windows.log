@@ -1,0 +1,11 @@
+﻿  DirectInputManager.cpp
+  BufferHelpers.cpp
+  CommonStates.cpp
+  SpriteBatch.cpp
+  VertexTypes.cpp
+  XInputManager.cpp
+  WindowsKeyManager.cpp
+  Renderer.cpp
+  SoundManager.cpp
+  WindowsMouseManager.cpp
+  Windows.vcxproj -> C:\Users\Christian\Git-Projekte\nesbag2_2.0.0\bin\win-x64\Release\Windows.lib
