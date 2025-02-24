@@ -14,7 +14,7 @@
 	DragDrop.AllowDrop="True"
 	x:DataType="vm:MainWindowViewModel"
 	Topmost="{Binding Config.Preferences.AlwaysOnTop}"
-	Title="{Binding WindowTitle}"
+	Title="{Binding Config.GameTitle}"
 >
 
 	<Design.DataContext>
