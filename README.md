@@ -2,8 +2,6 @@
 
 NESbag lets you distribute your NES game as a standalone app for Windows, Linux and macOS
 
-NESbag 2 will be available from February 24, 2025.
-
 ## Download versions
 
 Please visit our website https://www.eastpixel.de/nesbag to download a ready-to-use Windows or macOS version directly.
