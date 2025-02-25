@@ -518,7 +518,7 @@ bool Emulator::InternalLoadRom(VirtualFile romFile, VirtualFile patchFile, bool 
 		ConsoleRegion region = _console->GetRegion();
 		string modelName = region == ConsoleRegion::Pal ? "PAL" : (region == ConsoleRegion::Dendy ? "Dendy" : "NTSC");
 #ifdef EASTPIXEL_BUILD
-		MessageManager::DisplayMessage(modelName, "Anna The Magic of Words");
+		MessageManager::DisplayMessage(modelName, "");
 #else
 		MessageManager::DisplayMessage(modelName, FolderUtilities::GetFilename(GetRomInfo().RomFile.GetFileName(), false));
 #endif
