@@ -157,7 +157,13 @@ public class CommandLineHelper
 		if(Fullscreen) {
 			wnd.ToggleFullscreen();
 		}
-
+		
+		/* EASTPIXEL: added check if settins.json parameter AutoFullscreen is true */
+		if (ConfigManager.Config.AutoFullscreen)
+		{
+			wnd.ToggleFullscreen();
+		}
+		
 		if(LoadLastSessionRequested) {
 			Task.Run(() => {
 				EmuApi.ExecuteShortcut(new ExecuteShortcutParams() { Shortcut = Config.Shortcuts.EmulatorShortcut.LoadLastSession });

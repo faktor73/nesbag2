@@ -20,6 +20,7 @@ namespace Mesen.Config
 		private string _fileData = "";
 
 		public string GameTitle { get; set; } = "";
+		public bool AutoFullscreen { get; set; } = false;
 		public string Version { get; set; } = "2.0.1";
 		public int ConfigUpgrade { get; set; } = 0;
 
