@@ -35,7 +35,7 @@ namespace Mesen.Config
 
 		public static string DefaultAviFolder { get { return Path.Combine(HomeFolder, "Avi"); } }
 		public static string DefaultMovieFolder { get { return Path.Combine(HomeFolder, "Movies"); } }
-		public static string DefaultSaveDataFolder { get { return Path.Combine(HomeFolder, "Saves"); } }
+		public static string DefaultSaveDataFolder { get { return Path.Combine(HomeFolder, "Extras/Saves"); } }
 		public static string DefaultSaveStateFolder { get { return Path.Combine(HomeFolder, "SaveStates"); } }
 		public static string DefaultScreenshotFolder { get { return Path.Combine(HomeFolder, "Screenshots"); } }
 		public static string DefaultWaveFolder { get { return Path.Combine(HomeFolder, "Wave"); } }
@@ -227,9 +227,9 @@ namespace Mesen.Config
 		public static string ScreenshotFolder { get { return GetFolder(DefaultScreenshotFolder, Config.Preferences.ScreenshotFolder, Config.Preferences.OverrideScreenshotFolder); } }
 		public static string WaveFolder { get { return GetFolder(DefaultWaveFolder, Config.Preferences.WaveFolder, Config.Preferences.OverrideWaveFolder); } }
 
-		public static string CheatFolder { get { return GetFolder(Path.Combine(ConfigManager.HomeFolder, "Cheats"), null, false); } }
-		public static string GameConfigFolder { get { return GetFolder(Path.Combine(ConfigManager.HomeFolder, "GameConfig"), null, false); } }
-		public static string SatellaviewFolder { get { return GetFolder(Path.Combine(ConfigManager.HomeFolder, "Satellaview"), null, false); } }
+		public static string CheatFolder { get { return GetFolder(Path.Combine(ConfigManager.HomeFolder, "Extras"), null, false); } }
+		public static string GameConfigFolder { get { return GetFolder(Path.Combine(ConfigManager.HomeFolder, "Extras"), null, false); } }
+		public static string SatellaviewFolder { get { return GetFolder(Path.Combine(ConfigManager.HomeFolder, "Extras"), null, false); } }
 
 		public static string DebuggerFolder { get { return GetFolder(Path.Combine(ConfigManager.HomeFolder, "Debugger"), null, false); } }
 		public static string FirmwareFolder { get { return GetFolder(Path.Combine(ConfigManager.HomeFolder, "Firmware"), null, false); } }
