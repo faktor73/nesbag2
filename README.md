@@ -28,3 +28,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+## Steamworks integration
+
+Integrating NESbag with the Steamworks SDK (Online save games, other Steam based online features) is not possible due to licensing restrictions outlined here: https://partner.steamgames.com/doc/sdk/uploading/distributing_opensource
