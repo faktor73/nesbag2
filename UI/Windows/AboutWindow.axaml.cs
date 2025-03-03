@@ -7,6 +7,7 @@ using System;
 using System.ComponentModel;
 using Avalonia.Data;
 using Mesen.Interop;
+using Mesen.Config;
 using System.Collections.Generic;
 using Avalonia.Input;
 using Mesen.Utilities;
@@ -17,6 +18,8 @@ namespace Mesen.Windows
 	public class AboutWindow : MesenWindow
 	{
 		public string Version { get; }
+		public string GameVersion { get; }
+		public string GameTitle { get; }
 		public string BuildDate { get; }
 		public string RuntimeVersion { get; }
 		public List<AboutListEntry> LibraryList { get; }
@@ -25,6 +28,8 @@ namespace Mesen.Windows
 		public AboutWindow()
 		{
 			Version = EmuApi.GetMesenVersion().ToString();
+			GameVersion = ConfigManager.Config.Version;
+			GameTitle = ConfigManager.Config.GameTitle;
 			BuildDate = EmuApi.GetMesenBuildDate();
 			RuntimeVersion = ".NET " + Environment.Version;
 			RuntimeVersion += RuntimeFeature.IsDynamicCodeSupported ? " (JIT)" : " (AOT)";
