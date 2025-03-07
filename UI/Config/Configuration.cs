@@ -21,7 +21,12 @@ namespace Mesen.Config
 
 		public string GameTitle { get; set; } = "";
 		public bool AutoFullscreen { get; set; } = false;
-		public string Version { get; set; } = "2.0.1";
+		public string Version { get; set; } = "1.0.0";
+		public bool EnableVFilter_BRZ { get; set; } = false;
+		public bool EnableVFilter_HQ { get; set; } = false;
+		public bool EnableVFilter_Scale { get; set; } = false;
+		public bool EnableVFilter_Sai { get; set; } = false;
+		public bool EnableVFilter_Prescale { get; set; } = false;
 		public int ConfigUpgrade { get; set; } = 0;
 
 		[Reactive] public VideoConfig Video { get; set; } = new();
