@@ -30,14 +30,14 @@
 						AvailableValues="{Binding AvailableControllerTypesP1}"
 					/>
 
-					<!--<TextBlock Grid.Row="1" Grid.Column="0" Text="{l:Translate lblPlayer2}" />
+					<TextBlock Grid.Row="1" Grid.Column="0" Text="{l:Translate lblPlayer2}" />
 					<c:InputComboBox
 						Grid.Row="1" Grid.Column="1"
 						Config="{Binding Config.Port2}"
 						IsEnabled="{Binding !HasFourScore}"
 						ControllerType="{Binding Config.Port2.Type}"
 						AvailableValues="{Binding AvailableControllerTypesP2}"
-					/>-->
+					/>
 
 					<!--<c:GroupBox
 						Header="{l:Translate lblFourScoreConfig}"
